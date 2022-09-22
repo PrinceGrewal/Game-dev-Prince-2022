@@ -1,34 +1,59 @@
-<font color=white>  
-<h1 align=center>Forms</h1>
-<body style="background-color:black;">
-The following are all form elements (add to them):<br>
-<form>
+<style>
+body {
+  background-color: black;
+  font-family: cursive;
+}
 
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+</style>
+
+<h1 class="glow">FORMS</h1> 
+<font color=white>  
+<body style="background-color:black;"><font size=5>
+<b>The following are all form elements:<br></b> 
+<form>
+<hR>
 
 Enter Your First Name: <input type=text id="myTexto1" value="Prince"><br>
-Checkbox: <br>
-Beef:<input type=checkbox><br>
-Veggy: <input type=checkbox><br>
+<HR>
+<b><i><font size=5> Checkbox</i></b><BR>
+Red:<input type=checkbox><br>
+Green: <input type=checkbox><br>
+<HR>
 Radio Buttons: <br>
 <input type="radio" id="107.1" name="fav_language" value="107.1">107.1</label><br>
 <input type="radio" id="80.1" name="fav_language" value="80.1">80.1</label><br>
-
-
-hidden:<input type=hidden><br>
+<hr>
 File: <input type=file><br>
-reset:<input type=reset><br>
-
-Submit (advanced)<input type=submit><br>
-Button: <input type=button value="click" onclick="{
+<hr>
+Reset:<input type=reset><br>
+<hr>
+Submit (advanced)<input type=submit><br><hR>
+Button <input type=button value="Click" onclick="{
 document.getElementById('myArea01').value = 'Cool'
 }"><br>
 <Textarea: <br>
-<textarea id="myArea01" cols=60 rows=5 > wow </textarea><br>
-
-Select Box: <BR>
+<textarea id="myArea01" cols=10 rows=3 > wow </textarea><br><br>
+<HR>
+Select Box: <br>
 <select id="mySelect01" size=2>
 <option value='myOne'>One
 <option value='myTwo'>Two
 <option value='myThree'>Three
 </select>
-</form></font> 
+<HR>
