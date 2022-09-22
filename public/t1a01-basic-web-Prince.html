@@ -21,10 +21,25 @@ document.getElementById( 'myDiv01' ).innerHTML = 'Hello don\'t World'
 document.getElementById( 'myDiv01' ).innerHTML = 'Hi<br>'
 +'Bye'
 }">
-<input type=button value="Decisions" onclick="{
-document.getElementById('myDiv01').innerHTML = if (hour < 18) {
-greeting = \'Good day\';
-}
+<hr>
+<input type=button value="Decisions"> 
 </pre>
-'}"><br>
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+<br>
 <div id="myDiv01"></div>
