@@ -1,4 +1,3 @@
-
 <style>
 div.sticky {
   position: -webkit-sticky;
@@ -81,6 +80,31 @@ Select Box: <br>
 <form action="/action_page.php" method="post">
   <input type="text" name="fname" required>
   <input type="submit" value="Submit">
-</form></font> 
-
+</form>
+<HR> 
+<SCRIPT LANGUAGE="JavaScript">
+function testResults (form) {
+    TestVar = isNumberString (form.inputbox.value)
+    if (TestVar == 1)
+        alert ("Congratulations! You entered only numbers");
+    else
+        alert ("ONLY NUMBERS :(");
+}
+function isNumberString (InString)  {
+    if(InString.length==0) return (false);
+    var RefString="1234567890";
+    for (Count=0; Count < InString.length; Count++)  {
+        TempChar= InString.substring (Count, Count+1);
+        if (RefString.indexOf (TempChar, 0)==-1)  
+            return (false);
+    }
+    return (true);
+}
+</SCRIPT>
+<BODY>
+<FORM NAME="myform">
+Enter numbers only <BR> 
+<INPUT TYPE="text" NAME="inputbox" VALUE="">
+<INPUT TYPE="button" NAME="button" Value="Click" onClick="testResults(this.form)" >
+<HR> 
 
