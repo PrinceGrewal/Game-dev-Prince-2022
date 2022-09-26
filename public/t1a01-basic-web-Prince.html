@@ -14,7 +14,24 @@ Youtube Embedded video <br>
 <span> a span</span><br>
 <input type=button value="Pseudo Code" onclick="{
 document.getElementById( 'myDiv01' ).innerHTML = 'Hello don\'t World'
-}"><hr>
+}"></input> 
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<hr>
 <input type=button value="Input/Output" onclick="{
 document.getElementById( 'myDiv01' ).innerHTML = 'Hi<br>'
 +'Bye'
@@ -50,4 +67,5 @@ document.getElementById("demo").innerHTML = greeting;
 <p>This is a paragraph.<hr>
 <p>This is a <br> paragraph with a line break.</p><hr>
 <h1>Heading</h1> 
+
 
