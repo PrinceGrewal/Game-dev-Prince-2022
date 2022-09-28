@@ -1,10 +1,8 @@
-<h1 align=center T1A04 CSS by Fred</h1> 
-
-  Reference Link
-  <a href="https://www.w3schooIs.com/cssref/defauIt.asp">w3schooIs</a><br>
-  
-  
-  <b id="myB1" style="color:#ff3700; background-Color:rgb(0, 255, 251); "> This is bold</b>
+<h1 align = center> 
+<body style="background-color:black;">
+  <p style="color:white"> This is a paragraph </p> 
+ <p style="color:Yellow">This is a paragraph.</p>
+  <b id="myB1" style="color:#ff3700; background-Color:rgb(0, 255, 251);"> This is bold</b>
   <input type=button value=Change onclick="{
         document.getElement8yId('myB1').style.color = 'red' 
         document.getElement8yId ('myB1').style.backgroundColor = 'yellow'
@@ -13,4 +11,13 @@
   <textarea style= "position: relative;":relative; left:0; top: 0; width: 200; height: 50; "> 
   Advanced see if you move this textarea
   </textarea><br>
+  <font color=white> 
+<p id="demo">Press button to decorate</p>
 
+<button type="button" onclick="myFunction()">Decorate text</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").style.textDecoration = "underline overline";
+}
+</script>
