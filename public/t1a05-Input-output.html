@@ -1,12 +1,40 @@
-<h2 align = center>t1a05 - Input Output by Prince</h2>
+<font color = "white">
+<h2 align = center>Input Output by Prince</h2>
+<style>
+a:link {
+  color: #FFFF00 ;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
 
+<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp" target="_blank">Good reference link </a> 
+
+<body style="background-color:black;">
 <h4> Example input output code</h4>
 <pre>
        let myIn01 = document.getElementById('myNum01').value
        document.getElementById('myDiv01').innerHTML = myIn01 + ' squared = ' + myIn01*myIn01
 </pre>
 
-<h4> Example working code</h4>
+<h4> <b>Example working code</h4>
 <input id="myNum01" type=number value="4" ><br>
 
 <input type=button value="myEvent squares" onclick="{
@@ -14,11 +42,11 @@
  let myAnswer = myIn01 * myIn01
                                                     document.getElementById('myDiv01').innerHTML = 
                                                     myNum01 + ' squared = ' + myAnswer
-                                                    }"><br>
+}"><br>
  </script>
   
 
-<div id="myDiv01">...</div>
+<div id="myDiv01"></div><hr>
 <p>Click the button to create a Checkbox.</p>
 
 <button onclick="myFunction()">Try it</button>
@@ -30,3 +58,4 @@ function myFunction() {
   document.body.appendChild(x);
 }
 </script>
+
