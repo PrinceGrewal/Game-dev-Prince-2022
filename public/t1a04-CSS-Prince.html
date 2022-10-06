@@ -2,11 +2,12 @@
 <body style="background-color:black;">
   <p style="color:white"> This is a paragraph </p> 
  <p style="color:Yellow">This is a paragraph.</p>
-  <b id="myB1" style="color:#ff3700; background-Color:rgb(0, 255, 251);"> This is bold</b>
-  <input type=button value=Change onclick="{
-        document.getElement8yId('myB1').style.color = 'red' 
-        document.getElement8yId ('myB1').style.backgroundColor = 'yellow'
-  }"><br>
+
+<b id="myB1" style="color:#00ff00; background-color: blue; "> This is bold</b>
+<input type=button value=Change onclick="{
+document.getElementById('myB1').style.color = 'red'
+document.getElementById('myB1').style.backgroundColor = 'yellow'
+}"><br>
    
   <textarea style= "position: relative;":relative; left:0; top: 0; width: 200; height: 50; "> 
   Advanced see if you move this textarea
@@ -64,3 +65,29 @@ div:hover {
 
 </body>
 </html>
+
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation: myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>This example uses the shorthand animation property:</p>
+
+<div></div>
