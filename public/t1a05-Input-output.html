@@ -22,3 +22,14 @@ Javascript innerHTML value by Fred</a>
   
 
 <div id="myDiv01">...</div>
+<p>Click the button to create a Checkbox.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "checkbox");
+  document.body.appendChild(x);
+}
+</script>
