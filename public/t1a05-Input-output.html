@@ -1,5 +1,5 @@
 <font color = "white">
-<h2 align = center>Input Output by Prince</h2>
+<h2 align = center>Input-Output by Prince</h2>
 <style>
 a:link {
   color: #FFFF00 ;
@@ -66,5 +66,53 @@ function myFunction() {
   x.setAttribute("type", "checkbox");
   document.body.appendChild(x);
 }
-</script>
+</script><hr> 
+<h1>The output element</h1>
 
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form><hr>
+<h8>ADDITION AND SUBTRACTION</H8><BR> 
+<td> <input type="text" name="a" id="first" placeholder="Enter first value"> </td>
+</tr>
+<tr>
+<td> <input type="text" name="b" id="second" placeholder="Enter second value"> </td>
+</tr>
+<tr>
+<td> <button onclick="add ( )">Submit</button> </td>
+</tr>
+</table>
+<div id="add"></div>
+<div id="sub"></div>
+</body>
+
+<script type="text/javascript">
+function add( )
+{
+var a,b,Add,Sub;
+a = parseInt(document.getElementById ("first").value);
+b = parseInt(document.getElementById ("second").value);
+Add = a+b;
+Sub = a-b; 
+
+document.getElementById ("add") .innerHTML ="Addition : "+Add;
+document.getElementById ("sub").innerHTML ="Subtraction : "+Sub;
+}
+</script><hr>
+<h11>RANGE AND VALUE USING SLIDER</H11><BR><BR>
+<input type="range" id="myRange" value="90">
+
+<p>Click the button to get the value of the slider control.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myRange").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
