@@ -38,7 +38,7 @@ a:active {
 <h4> <b>Example working code</h4>
 <input id="myNum01" type=number value="4" ><br>
 
-<input type=button value="myEvent squares" onclick="{
+<input type=button value="Number squared" onclick="{
  let myIn01 = parseFloat(document.getElementById('myNum01').value)
  let myAnswer = myIn01 * myIn01
                                                     document.getElementById('myDiv01').innerHTML = 
@@ -48,7 +48,7 @@ a:active {
 <hr>
  </script>
   <input id="myNum01" type=number value="4" ><br>
-<input type=button value="myEvent Added" onclick="{
+<input type=button value="Numbers Added" onclick="{
  let myIn01 = parseFloat(document.getElementById('myNum01').value)
  let myAnswer = myIn01 + myIn01
                                                     document.getElementById('myDiv02').innerHTML = 
@@ -56,24 +56,15 @@ a:active {
 }">
 <div id="myDiv02"></div><hr>
 
-<p>Click the button to create a Checkbox.</p>
-
-<button onclick="myFunction()">Try it</button>
-
-<script>
-function myFunction() {
-  var x = document.createElement("INPUT");
-  x.setAttribute("type", "checkbox");
-  document.body.appendChild(x);
-}
-</script><hr> 
-<h1>The output element</h1>
-
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-<input type="range" id="a" value="50">
-+<input type="number" id="b" value="25">
-=<output name="x" for="a b"></output>
-</form><hr>
+  <input id="myNum01" type=number value="4" ><br>
+<input type=button value="Number Divided by itself" onclick="{
+ let myIn01 = parseFloat(document.getElementById('myNum01').value)
+ let myAnswer = myIn01 / myIn01
+                                                    document.getElementById('myDiv03').innerHTML = 
+                         myNum01 + ' Divided = ' + myAnswer
+}">
+<div id="myDiv03"></div><hr>
+<body>
 <h8>ADDITION AND SUBTRACTION</H8><BR> 
 <td> <input type="text" name="a" id="first" placeholder="Enter first value"> </td>
 </tr>
@@ -86,7 +77,6 @@ function myFunction() {
 </table>
 <div id="add"></div>
 <div id="sub"></div>
-</body>
 
 <script type="text/javascript">
 function add( )
@@ -101,6 +91,15 @@ document.getElementById ("add") .innerHTML ="Addition : "+Add;
 document.getElementById ("sub").innerHTML ="Subtraction : "+Sub;
 }
 </script><hr>
+
+<h1>The output element</h1>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form><hr>
+
 <h11>RANGE AND VALUE USING SLIDER</H11><BR><BR>
 <input type="range" id="myRange" value="90">
 
@@ -115,4 +114,19 @@ function myFunction() {
   var x = document.getElementById("myRange").value;
   document.getElementById("demo").innerHTML = x;
 }
-</script>
+</script><hr>
+<body>
+<html>
+
+<p>Click the button to create a Checkbox.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("INPUT");
+  x.setAttribute("type", "checkbox");
+document.body.appendChild(x);
+}
+
+</script><br>
