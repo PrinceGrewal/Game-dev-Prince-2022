@@ -1,7 +1,7 @@
-<font color = white>  
+<font color = wHITE>  
 <h2 align=center>Decisions</h2>
-<body style="background-color:black">
-<font color = white> 
+<body style="background-color:BLACK">
+<font color = WHITE> 
 <a href="https://www.w3schools.com/js/js_if_else.asp"> Good reference to Decisions if ... else statments
 Javascript innerHTML value by Fred</a><br>
 Note = Not , && == AND , || = OR
@@ -43,4 +43,48 @@ if (myIn01 >= 3){
                                                                                              }">
                                                                                              
                                                                                              <div id="myDiv01">...</div> <hr>
+                                                                         <FONT SIZE = 5>                    
+<LABEL FOR="weather">Select the weather type today </label></FONT><BR>
+<select id="weather">
+  <OPTION value="">--Make a choice--</option>
+  <option value="sunny">Sunny</option>
+  <option value="rainy">Rainy</option>
+  <option value="snowing">Snowing</option>
+  <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+<SCRIPT>
+const select = document.querySelector('select');
+const para = document.querySelector('p');
+
+select.addEventListener('change', setWeather);
+
+function setWeather() {
+  const choice = select.value;
+
+  if (choice === 'sunny') {
+    para.textContent = 'It is nice and sunny outside today. Wear shorts! Go to the beach, or the park, and get an ice cream.';
+  } else if (choice === 'rainy') {
+    para.textContent = 'Rain is falling outside; take a rain coat and an umbrella, and don\'t stay out for too long.';
+  } else if (choice === 'snowing') {
+    para.textContent = 'The snow is coming down — it is freezing! Best to stay in with a cup of hot chocolate, or go build a snowman.';
+  } else if (choice === 'overcast') {
+    para.textContent = 'It isn\'t raining, but the sky is grey and gloomy; it could turn any minute, so take a rain coat just in case.';
+  } else {
+    para.textContent = 'GO TO WORK';
+  }
+}
+</SCRIPT> <HR> 
+
+<P> ENTER YOUR AGE </P> 
+<input id="myNum08" type=number value ="NULL"><br>
+<input type=button value="AGE CHECK" onclick="{
+  let myAGE = parseFloat(document.getElementById('myNum08').value)
+if (myAGE >= 18){
+                                              document.getElementById('myDiv05').innerHTML =  ' YOU ARE AN ADULT'
+} else {                                       document.getElementById('myDiv05').innerHTML =  ' YOU ARE A CHILD'
+}
+}">                                                               
+                                                                                             <div id="myDiv05">...</div>
 
