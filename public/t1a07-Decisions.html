@@ -1,4 +1,3 @@
-<font color = wHITE>  
 <h2 align=center>Decisions</h2>
 <body style="background-color:BLACK">
 <font color = WHITE> 
@@ -86,5 +85,15 @@ if (myAGE >= 18){
 } else {                                       document.getElementById('myDiv05').innerHTML =  ' YOU ARE A CHILD'
 }
 }">                                                               
-                                                                                             <div id="myDiv05">...</div>
+                                                                                             <div id="myDiv05">...</div><HR>
+                                                                                             <P> ENTER YOUR AGE </P> 
+<input id="myNum033" type=number value ="NULL"><br>
+<input type=button value="Can I Vote?" onclick="{
+  let myVOTE = parseFloat(document.getElementById('myNum033').value)
+if (myVOTE >= 18){
+                                              document.getElementById('myDiv0332').innerHTML =  ' You Can Vote'
+} else {                                       document.getElementById('myDiv0332').innerHTML =  ' Nope  '
+}
+}">                                                               
+                                                                                        <div id="myDiv0332">...</div><Hr>
 
