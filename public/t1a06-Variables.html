@@ -2,7 +2,7 @@
 <h2 align=center>VARIABLES </h2><HR>
 
 <body style="background-color:BLACK;">
-<a href="https://www.w3schools.com/js/js_variables.asp"> Good Reference to Vaariables in Javascript</a> <br>
+<a href="https://www.w3schools.com/js/js_variables.asp"> Good Reference to Variables in Javascript</a> <br>
 
 Other Languages use bool, int , float , char, string ,
 int_8 , int_16 etc <br>
@@ -49,4 +49,26 @@ buttonA.onclick = function() {
 function myFunction() {
   alert("STORED STUFF HERE");
 }
+
+
 </script>
+<HR>
+<input id = "myText02" type=text value = " ASD " > <br>
+
+<input type = button value = "SHOW STUFF IN THE BOX" onclick ="{
+let myIn01 = document.getElementById ('myText02').value
+document.getElementById ('myDiv02' ).innerHTML = myIn01
+}"><br>
+
+
+<div id ="myDiv02">... </div><hr>
+<h1>JavaScript Variables</h1>
+
+<p>The result of adding "John" + " " + "Doe" is:</p>
+<p id="demo"></p>
+
+<script>
+let x = "John" + " " + "Doe";
+document.getElementById("demo").innerHTML = x;
+</script>
+
