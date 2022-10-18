@@ -121,75 +121,8 @@ Max loops: <input id="myNum01" type=number value="4" ><br>
 <div id="myDiv01"><font color=red>...</font></div>
 <br>
 <hr> 
-  <h1>CLICK ON BUTTON TO LOOP BETWEEN COLORS</H1>
-    <button id="btn">Button</button>
-
-    <script src="index.js"></script>
-<script>
-const btn = document.getElementById('btn');
-
-let  index  =  0 ;
-
-const colors = ['salmon', 'green', 'blue', 'purple'];
-
-btn.addEventListener('click', function onClick() {
-  btn.style.backgroundColor = colors[index];
-  btn.style.color = 'white';
-
-  index = index >= colors.length - 1 ? 0 : index + 1;
-});
-
-</script> op++ ){
-       if (myLoop * 2 > myMax){
-          myTemp += ' cool '
-      }
-      myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp 
-}">
 
 <br>
-<input type=button value="Basic For loop only" onclick="{
-    let myTemp = ''
-    let myMax = parseInt(document.getElementById('myNum01').value)
-    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-      myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp 
-}">
-
-
-<br>
-<input type=button value="Even number identifier" onclick="{
-    document.getElementById('myDiv01').innerHTML = ''
-    let myTemp = ''
-    let myMax = parseInt(document.getElementById('myNum01').value)
-    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-       if (myLoop % 2 == 0){
-          myTemp += 'Even Number, '
-      }
-      myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp 
-}">
-<br>
-
-<input type=button value="Odd number identifier" onclick="{
-    document.getElementById('myDiv01').innerHTML = ''
-    let myTemp = ''
-    let myMax = parseInt(document.getElementById('myNum01').value)
-    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-       if (myLoop % 2 == 1){
-          myTemp += '<font style=\'color:red;\'> Odd </font>'
-      }
-      myTemp += 'Loop number: ' + myLoop + '<br>'
-    }
-    document.getElementById('myDiv01').innerHTML = myTemp 
-}">
-
-<div id="myDiv01"><font color=red>...</font></div>
-<br>
-<hr> 
   <h1>CLICK ON BUTTON TO LOOP BETWEEN COLORS</H1>
     <button id="btn">Button</button>
 
