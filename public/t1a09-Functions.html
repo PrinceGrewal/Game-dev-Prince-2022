@@ -79,14 +79,47 @@ function calculateTemp() {
 </form>
 <div id = "myDiv01">... </div>
       
-        <button onclick="myFunction()">Click me</button>
+        <button onclick="my3Function()">Click me</button>
 
-<p id="demo"></p>
+<p id="dem3o"></p>
 
 <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
+function my3Function() {
+  document.getElementById("dem3o").innerHTML = "Hello World";
 }
 </script>
         
 <hr> 
+When You Press the button the Color Changes
+<br>
+<button id="btn">Button</button>
+<script>
+const btn = document.getElementById('btn');
+
+let index = 0;
+
+const colors = ['salmon', 'green', 'blue', 'purple'];
+
+btn.addEventListener('click', function onClick() {
+  btn.style.backgroundColor = colors[index];
+  btn.style.color = 'white';
+
+  index = index >= colors.length - 1 ? 0 : index + 1;
+});
+
+</script> 
+<hr>
+<input type="range" id="myRange" value="90">
+
+<p>Click the button to call the function and get the value of the Slider.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myRange").value;
+  document.getElementById("demo2").innerHTML = x;
+}
+</script><hr>
