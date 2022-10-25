@@ -31,8 +31,10 @@ function myExampleFunction(){
 <input type=text id="myText01" value="3"><br>
 
 <input type =button value ="Function Example" onClick=" {
-   document.getElementById('myDiv01').innerHTML = myExampleFunction()
-}"><hr>
+   document.getElementById('myDiv02').innerHTML = myExampleFunction()
+}">
+<div id = "myDiv02">... </div>
+<hr>
 <script>
 function calculateTemp() {
    function celToFah(celsius) {
@@ -75,7 +77,7 @@ function calculateTemp() {
    <input name="temp" type="submit"> <br>
    <span id="resultContainer"></span>
 </form>
-
+<div id = "myDiv01">... </div>
       
         <button onclick="myFunction()">Click me</button>
 
@@ -87,5 +89,4 @@ function myFunction() {
 }
 </script>
         
-<div id = "myDiv01">... </div>
 <hr> 
