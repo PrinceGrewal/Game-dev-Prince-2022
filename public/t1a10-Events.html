@@ -97,8 +97,8 @@ card.addEventListener('dblclick', (e) => {
 body {
   background-color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: aside;
+  align-items: aside;
   height: 100vh;
   overflow: hidden;
 }
@@ -220,3 +220,24 @@ document.querySelectorAll("[data-cursor]").forEach((item) => {
   });
 });
 </script>
+<hr> 
+<br> 
+ <font color=white>
+<h1> CLICK ON THE TEXT ONCE </H1>
+ <body style="background-color:black;">
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+The mouseDown function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red.
+The mouseUp function is triggered when the mouse button is released, and sets the color of the text to yellow.
+</p>
+<br> 
+
+<script>
+function mouseDown() {
+  document.getElementById("myP").style.color = "red";
+}
+
+function mouseUp() {
+  document.getElementById("myP").style.color = "yellow";
+}
+</script>
+<br> 
