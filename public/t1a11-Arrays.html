@@ -142,3 +142,74 @@ var colors=["Red","Pink","Purple","Blue"];
         document.getElementById("myId").innerHTML = a;
     }
 </script>
+<hr> 
+
+            <input type="text" value="5" id="txt" placeholder="Number to show">
+            <input type="text" value="" id="txt2" placeholder="New item"><br>
+            <button class="button button003" onclick="{sa()}">Show Array</button>
+            <button class="button button003" onclick="{df()}">Show next array in the box</button>
+<br>
+                <button class="button button003" onclick="{two()}">2d Array Example</button>
+            </details>
+            <div id="div">...</div>
+          
+        <script>
+            const ar = ["This", "is", "your", "array"];
+            let ar2 = [ [1, 2], [3, 4], [5, 6] ];
+
+            function sa() {
+                let temp = document.getElementById('txt').value
+                let sum = ''
+
+                for (let i = 0; i < temp; i++) {
+                    sum += 'Array ' + i + ' = ' + ar[i] + '<br>'
+                }
+                document.getElementById('div').innerHTML = sum
+            }
+
+            function df() {
+                let temp2 = document.getElementById('txt2').value
+                ar.push(temp2);
+                sa()
+            }
+
+            function two() {
+                let temp = document.getElementById('txt').value
+                let sum = ''
+                
+                console.log(ar2[0][0]); // 1
+                console.log(ar2);
+
+                for (let i = 0; i < temp; i++) {
+                    ar2[0][0] = 1
+                    sum += ar2 + 'X'
+                }
+                document.getElementById('div').innerHTML = sum
+            }
+        </script>
+        <hr> 
+        
+<h2>A Simple JavaScript Array</h2>
+
+
+
+<pre>
+const cars = [];
+cars[0]= "Acura";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+document.getElementById("demo").innerHTML = cars;
+</pre>
+
+<hr> 
+
+<p id="demo"></p>
+
+<script>
+const cars = [];
+cars[0]= "Acura";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+document.getElementById("demo").innerHTML = cars;
+</script>
+<hr> 
