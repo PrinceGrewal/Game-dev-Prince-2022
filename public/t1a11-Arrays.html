@@ -200,8 +200,7 @@ cars[1]= "Volvo";
 cars[2]= "BMW";
 document.getElementById("demo").innerHTML = cars;
 </pre>
-
-<hr> 
+ 
 
 <p id="demo"></p>
 
@@ -213,3 +212,37 @@ cars[2]= "BMW";
 document.getElementById("demo").innerHTML = cars;
 </script>
 <hr> 
+<h2>JavaScript Array Sort</h2>
+
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction1()">Sort Alphabetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<p id="demo"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo2").innerHTML = points;  
+
+function myFunction1() {
+  points.sort();
+  document.getElementById("demo2").innerHTML = points;
+}
+function myFunction2() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo2").innerHTML = points;
+}
+</script>
+<p id="demo2"></p>
+<hr>
+  <h1>JavaScript Array length Property</h1>
+<pre>
+         var arr = new Array( 10, 20, 30 );
+         document.write("arr.length is : " + arr.length); 
+</pre> 
+
+      <script type = "text/javascript">
+         var arr = new Array( 10, 20, 30 );
+         document.write("arr.length is : " + arr.length); 
+      </script>
