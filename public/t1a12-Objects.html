@@ -1,4 +1,4 @@
- <body style="background-color:BLACK;">
+  <body style="background-color:BLACK;">
 <FONT COLOR = WHITE> 
 <h2 align=center>OBJECTS</h2>
 <HR>
@@ -35,7 +35,14 @@ let myPerson = {
 <div id="myDiv01">...</div>
 <br>
 <hr>
-<input type=button value="Example Object Set and Show"
+<pre>
+let myPerson = {
+      'FirstClass' : 'Life Science',
+       'SecondClass' : 'English',
+        'ThirdClass' : 'Maths',
+         'FourthClass' : 'SocialStudies'
+         </pre>
+<input type=button value="Click here to get Different Objects"
 onClick="{
  
    let myPerson = {
@@ -55,4 +62,21 @@ onClick="{
 <hr>
 
 
+<br>
+ <h1>Enter your details here
+</h1>
+Set name: <input type=text id="myText01" value="Jack"> <br> 
+Set last name: <input type=text id="myText02" value="Fast"> <br> 
+Set age: <input type=text id="myText03" value="20"> <br> 
+Set eye color:  <input type=text id="myText04" value="Red"> <br> 
+
+<br> <input type="button" id="myButton01" value="Submit" onclick="variable()">
+<hr>
+<h2>Check Your Credit Score</h2>
+<input type=button value="Credit Score" onclick="{
+document.getElementById('myDiv03').innerHTML += 'Damn Your Credit score is below 580 which means it sucks get it together :).'
+}">
+<div id=myDiv03>
+
+</div>
 <br>
