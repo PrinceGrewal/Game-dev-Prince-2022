@@ -1,5 +1,7 @@
 
-<h2 align=center>t2a03-Classes-by-fred.html</h2>
+<body style="background-color:black;">
+<font color=white>
+<h2 align=center>Classes</h2>
 
 <a href ="">Find a Good refrence to Jvascript Classes</a><br>
 Classes are both Objects that store variables(Called Properties) and Functions that work on the variables(called Methods)
@@ -38,3 +40,71 @@ myDog.myShow()
 }">                                                                           
 
 <div id ="myDiv01"> ... </div>
+<hr>
+<pre>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+</pre> 
+<h1> Result </h1> 
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+</script>
+<hr> 
+<h1>New Code</h1> 
+<pre>
+    class emp {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+             
+        }
+    }
+    const emp1 = new emp("Geek1", "25 years");
+    document.write(emp1.name);
+    document.write(":");
+    document.write(emp1.age);
+     </pre> 
+     <h1>RESULTS</H1> 
+<script>
+    class emp {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+             
+        }
+    }
+    const emp1 = new emp("Geek1", "25 years");
+    document.write(emp1.name);
+    document.write(":");
+    document.write(emp1.age);
+     
+</script>
