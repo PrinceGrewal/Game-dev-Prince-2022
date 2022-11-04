@@ -1,4 +1,4 @@
-  <body style="background-color:BLACK;">
+ <body style="background-color:BLACK;">
 <FONT COLOR = WHITE> 
 <h2 align=center>OBJECTS</h2>
 <HR>
@@ -8,7 +8,7 @@ Objects are stored named variables
 <h4> Example Objects code</h4>
 <pre>
 let myPerson = {
-"firstName": "Jhon",
+"firstName": "Deqavious",
 "lastName": "Doe",
 "age": 50, 
 "eyeColor": "blue"
@@ -21,7 +21,7 @@ let myPerson = {
 <input type=button value="Example Object Set and Show" onClick="{
                                            
    let myPerson = {
-      'firstName' : 'Jhon',
+      'firstName' : 'Deqavious',
        'lastName' : 'Doe',
         'age': 50,
          'eyeColor': 'blue'
@@ -32,7 +32,15 @@ let myPerson = {
     document.getElementById('myDiv01').innerHTML +=  'age' + myPerson.age + '<br>'
     document.getElementById('myDiv01').innerHTML +=  'eyeColor' + myPerson.eyeColor + '<br>'                                                           
     }">
-<div id="myDiv01">...</div>
+    <div id="myDiv01">...</div>
+  <input type=button value="Get his number" onClick="{
+                                           
+   let myPerson = {
+      'firstNumber' : 'No number provided',
+     }
+    document.getElementById('myDiv01').innerHTML +=  'firstNumber: ' + myPerson.firstNumber + '<br>'                                                         
+    }">
+<div id="myDiv03">...</div>
 <br>
 <hr>
 <pre>
@@ -74,9 +82,8 @@ Set eye color:  <input type=text id="myText04" value="Red"> <br>
 <hr>
 <h2>Check Your Credit Score</h2>
 <input type=button value="Credit Score" onclick="{
-document.getElementById('myDiv03').innerHTML += 'Damn Your Credit score is below 580 which means it sucks get it together :).'
+document.getElementById('myDiv04').innerHTML += 'Damn Your Credit score is below 580 which means it sucks get it together :).'
 }">
-<div id=myDiv03>
+<div id=myDiv04>
 
 </div>
-<br>
