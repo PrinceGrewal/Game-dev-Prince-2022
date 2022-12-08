@@ -26,23 +26,32 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
 }">
 <hr>
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
-
-<p>Number of clicks:</p>
-<p id="demo"></p>
-
-<p>Number of clicks will not reset if the window is refreshed.</p>
-
 <script>
-clickCounter();
-
-function clickCounter() {
-  if (localStorage.clickcount) {
-    localStorage.clickcount = Number(localStorage.clickcount)+1;
-  } else {
-    localStorage.clickcount = 1;
+function clickCounting() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
   }
-  document.getElementById("demo").innerHTML = localStorage.clickcount;
+  else {
+    document.getElementById("result").innerHTML = "Your browser does not support web storage.";
+  }
+}
+
+function clearCounting() {
+    window.localStorage.clear();
 }
 </script>
+</head>
+<body>
+
+<h3> Click the button to see the counter increase.</h3>
+<p> <button onclick="clickCounting()" type="button">Click to Count</button></p>
+<div id="result"> </div>
+<h4> Now close the browser tab or browser window and execute the code again on the browser. <h4>
+<h3>Note: The counter will start counting from where you leave and is not reset.</h3>
+<p> <button onclick="clearCounting()" type="button">Clear Count</button></p>
 <hr> 
