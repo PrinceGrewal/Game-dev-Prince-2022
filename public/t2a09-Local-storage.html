@@ -1,4 +1,5 @@
 <body style="background-color:Black;">
+<font color=white> 
 <h2 align=center>Local Storage</h2>
 
 
@@ -24,3 +25,24 @@ Text example: <input id="myText1" type=text size=70 value="" placeholder="Write 
 <input type="button" value="Retrieve Text" onClick="{
    document.getElementById('myText1').value = localStorage.getItem('myStoredText')
 }">
+<hr>
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+
+<p>Number of clicks:</p>
+<p id="demo"></p>
+
+<p>Number of clicks will not reset if the window is refreshed.</p>
+
+<script>
+clickCounter();
+
+function clickCounter() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 1;
+  }
+  document.getElementById("demo").innerHTML = localStorage.clickcount;
+}
+</script>
+<hr> 
