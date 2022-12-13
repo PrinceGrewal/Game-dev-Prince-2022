@@ -1,7 +1,7 @@
  <body style="background-color:black;">
  <font color=white> 
  <h1 align=center>Sort</h1> 
-
+<hr> 
 <p>Click the buttons to sort the array alphabetically or numerically.</p>
 
 <button onclick="myFunction1()">Sort Alphabetically</button>
@@ -22,4 +22,55 @@ function myFunction2() {
   document.getElementById("demo").innerHTML = points;
 }
 </script>
+<hr>
+    <script>
+      function sort() {
+        // get the input from the textarea
+        var input = document.getElementById("input").value;
+
+        // split the input string into an array of numbers
+        var arr = input.split(",").map(function(num) {
+          return parseInt(num);
+        });
+
+        // sort the array in ascending order
+        arr.sort(function(a, b) {
+          return a - b;
+        });
+
+        // display the sorted array in the textarea
+        document.getElementById("output").value = arr.join(", ");
+      }
+    </script>
+    <h1>Sort Numbers(use commas)</h1>
+    <p>Enter a comma-separated list of numbers in the textarea below, then click the button to sort the numbers in ascending order.</p>
+    <textarea id="input" value="5,12,4,78,33,22"></textarea>
+    <br>
+    <button onclick="sort()">Sort</button>
+    <br>
+    <textarea id="output" disabled></textarea>
+<hr>
+    <script>
+      function sort() {
+        // get the text from the textarea
+        var text = document.getElementById("words").value;
+
+        // convert the text to an array of words
+        var arr = text.split(",");
+
+        // sort the array in alphabetical order
+        arr.sort(function(a, b) {
+          return a.localeCompare(b);
+        });
+
+        // update the textarea with the sorted array
+        document.getElementById("words").value = arr.join(",");
+      }
+    </script>
+    <h1>Sort Alphabets (use commas)</h1>
+    <p>Enter a comma-separated list of words in the textarea below, then click the "Sort" button to sort the array in alphabetical order.</p>
+    <textarea id="words"></textarea>
+    <br />
+    <button onclick="sort()">Sort</button>
+<hr> 
 
