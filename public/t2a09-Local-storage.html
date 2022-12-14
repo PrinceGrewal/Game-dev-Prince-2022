@@ -58,50 +58,44 @@ CLICK AGAIN TO LOAD PREVIOUS CLICKS<BR>
 <font color=white> 
 
     <div class="small-container">
-      <h1>Stores Items (Press enter to store)</h1>
-<form>
-  <input id="item" type="text" placeholder="New" required />
-</form>
+    <h1>Local Storage Example (Refresh to see saved text)</h1>
 
-<h2>Items</h2>
-<ul></ul>
+    <form>
+      <label for="text-input">Enter some text to save to local storage:</label>
+      <input type="text" id="text-input" />
+      <button type="submit">Save</button>
+    </form>
 
-<button>Clear All</button>
-<script>
-const form = document.querySelector('form')
-const ul = document.querySelector('ul')
-const button = document.querySelector('button')
-const input = document.getElementById('item')
-let itemsArray = localStorage.getItem('items')
-  ? JSON.parse(localStorage.getItem('items'))
-  : []
+    <h2>Saved Text</h2>
+    <ul id="saved-text-list"></ul>
 
-localStorage.setItem('items', JSON.stringify(itemsArray))
-const data = JSON.parse(localStorage.getItem('items'))
+    <script>
+      // Get a reference to the form and input
+      const form = document.querySelector('form');
+      const textInput = document.querySelector('#text-input');
 
-const liMaker = (text) => {
-  const li = document.createElement('li')
-  li.textContent = text
-  ul.appendChild(li)
-}
+      // Get a reference to the saved text list
+      const savedTextList = document.querySelector('#saved-text-list');
 
-form.addEventListener('submit', function (e) {
-  e.preventDefault()
+      // When the form is submitted, save the input text to local storage
+      form.addEventListener('submit', event => {
+        event.preventDefault(); // prevent the form from refreshing the page
 
-  itemsArray.push(input.value)
-  localStorage.setItem('items', JSON.stringify(itemsArray))
-  liMaker(input.value)
-  input.value = ''
-})
+        // Get the text from the input
+        const text = textInput.value;
 
-data.forEach((item) => {
-  liMaker(item)
-})
+        // Save the text to local storage
+        localStorage.setItem('text', text);
 
-button.addEventListener('click', function () {
-  localStorage.clear()
-  while (ul.firstChild) {
-    ul.removeChild(ul.firstChild)
-  }
-})
-</script> 
+        // Clear the input
+        textInput.value = '';
+      });
+
+      // When the page loads, get the saved text from local storage and display it in the list
+      const savedText = localStorage.getItem('text');
+      if (savedText) {
+        const listItem = document.createElement('li');
+        listItem.innerText = savedText;
+        savedTextList.appendChild(listItem);
+      }
+    </script>
