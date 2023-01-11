@@ -1,77 +1,33 @@
-<style>
-body {
-  background-color: black;
-  font-family: cursive;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Level 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-.glow {
-  font-size: 65px;
-  color: #fff;
-  text-align: center;
-  animation: glow 1s ease-in-out infinite alternate;
-}
+<meta name="generator" content="Construct 3">
 
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 2px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-</style>
+	<link rel="manifest" href="appmanifest.json">
+	<link rel="apple-touch-icon" sizes="128x128" href="icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="icons/icon-256.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
+	<link rel="icon" type="image/png" href="icons/icon-512.png">
 
-<h1 class="glow">Prince's Web Page</h1> 
+<link rel="stylesheet" href="style.css">
 
-<hr>
+</head>
+<body>
+<div id="fb-root"></div>
 
-<body style="background-color:black;"> </body>
-<ul id="test"> 
-<li><a href="https://github.com/PrinceGrewal/Game-dev-Prince-2022" style = "color: white">My Github</a>
-<li><a href="t1a01-basic-web-Prince.html" style = "color: white">T1A01-Basic-Web</a>
-<li><a href="t1a02-Tables-Prince.html" style = "color: white">T1A02-Tables-List</a>
-<li><a href="t1a03-Forms-Prince.html" style = "color: white">T1A03-Forms</a>
-<li><a href="t1a04-CSS-Prince.html" style = "color: white">T1A04-CSS</a> 
-<li><a href="t1a05-Input-output.html" style = "color: white">T1A05-Input-Output</a>
-<li><a href="t1a06-Variables.html" style = "color: white">T1A06 Variables</a>
-<li><a href=" t1a07-Decisions.html" style = "color: white">T1A07 Decisions</a>
-<li><a href="t1a08-Loops.html" style = "color: white">T1A08 Loops</a> 
-<li><a href="t1a09-Functions.html" style = "color: white">T1A09 Functions </a> 
-<li><a href="t1a10-Events.html" style = "color: white">T1A10 Events</a> 
-<li><a href="t1a11-Arrays.html" style = "color: white">T1A11 ARRAYS</a>
-<li><a href="t1a12-Objects.html" style = "color: white">T1A12 OBJECT</a>
-<li><a href="t1a13-Classes.html" style = "color: white">T1A13 Classes</a>
-<li><a href="t1a15-Review-coding-Prince.html" style = "color: white">T1A15-Review</a> 
-<li><a href="t2a06-spy.html" style = "color: white">T2A06-SPY</a>
-  <li><a href="t2a07-Moving-background.html" style = "color: white">T2A07-Moving Background</a> 
-  <li><a href="t2a08-Canvas.html" style = "color: white">T2A08-Canvas</a> 
-<li><a href="t2a09-Local-storage.html" style = "color: white">T2A09-Local Storage</a> 
-    <li><a href="t2a10-Sound.html" style = "color: white">T2A10-Sound</a>
-      <li><a href="t2a11-Game-Template.html" style = "color: white">T2A11-Game-Template</a>
-      <li><a href="t2a12-Sort.html" style = "color: white">T2A12-Sort</a>
-        <li><a href="t2a14-Project-Description.html" style = "color: white">T2A14-Project-Description</a>
-  <li><a href="t2a15-Pay.html" style = "color: white">T2A15 Tax Calculator)</a>
-  
-  
-<li><a href="browser" style = "color: white">Edge Impulse</a>
-</ul>
-<script>
-const test = document.getElementById("test");
-
-test.addEventListener("mouseleave", (event) => {
-  event.target.style.color = "white";
-
-  setTimeout(() => {
-    event.target.style.color = "white";
-  }, 10);
-}, false);
-
-test.addEventListener("mouseout", (event) => {
-  event.target.style.color = "orange";
-
-  setTimeout(() => {
-    event.target.style.color = "white";
-  }, 250);
-}, false);
-</script>
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script src="scripts/supportcheck.js"></script>
+	<script src="scripts/offlineclient.js" type="module"></script>
+	<script src="scripts/main.js" type="module"></script>
+	<script src="scripts/register-sw.js" type="module"></script>
+</body>
+</html>
